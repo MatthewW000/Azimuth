@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azimuth", "Azimuth\Azimuth.csproj", "{BAA33909-5488-4D09-90B1-3B9D4883F16C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azimuth-Test", "Azimuth-Test\Azimuth-Test.csproj", "{8C3D9D1A-1D46-4E9B-8E12-F5141DF0749B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{BAA33909-5488-4D09-90B1-3B9D4883F16C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BAA33909-5488-4D09-90B1-3B9D4883F16C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BAA33909-5488-4D09-90B1-3B9D4883F16C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C3D9D1A-1D46-4E9B-8E12-F5141DF0749B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C3D9D1A-1D46-4E9B-8E12-F5141DF0749B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C3D9D1A-1D46-4E9B-8E12-F5141DF0749B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C3D9D1A-1D46-4E9B-8E12-F5141DF0749B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
