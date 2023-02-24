@@ -27,7 +27,7 @@
 			foreach(Action action in deactivateActions)
 				action?.Invoke();
 
-			foreach(Action action in deactivateActions)
+			foreach(Action action in activateActions)
 				action?.Invoke();
 
 			deactivateActions.Clear();

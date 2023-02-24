@@ -29,7 +29,7 @@ namespace Azimuth
 		{
 			LoadAllOfType<Texture2D>(textures, "Textures", "png", Raylib.LoadTexture);
 			LoadAllOfType<Image>(images, "Images", "jpg", Raylib.LoadImage);
-			LoadAllOfType<Sound>(sounds, "Sounds", "mp3", Raylib.LoadSound);
+			LoadAllOfType<Sound>(sounds, "Sounds", "wav", Raylib.LoadSound);
 			LoadAllOfType<Font>(fonts, "Fonts", "ttf", Raylib.LoadFont);
 		}
 
@@ -41,6 +41,8 @@ namespace Azimuth
 			{
 				string id = string.Concat($"{_folder}/", file.AsSpan(file.LastIndexOf(_folder, StringComparison.Ordinal) + _folder.Length + 1));
 				id = id.Replace($".{_extension}", "").Replace('\\', '/');
+				
+				_assets.Add(id, _loadFnc(file));
 			}
 		}
 
