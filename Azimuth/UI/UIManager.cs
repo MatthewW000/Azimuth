@@ -17,15 +17,18 @@ namespace Azimuth.UI
 		public static void Remove(Widget _widget)
 		{
 			if(widgets.Contains(_widget))
-				widgets.Add(_widget);
+				widgets.Remove(_widget);
 		}
 
 		internal static void Update()
 		{
 			widgets.Sort();
-			
-			foreach(Widget widget in widgets)
+
+			for(int index = 0; index < widgets.Count; index++)
+			{
+				Widget widget = widgets[index];
 				widget.Update(Raylib.GetMousePosition());
+			}
 		}
 
 		internal static void Draw()
