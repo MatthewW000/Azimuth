@@ -10,8 +10,14 @@ namespace Azimuth.UI
 
 		public class RenderSettings
 		{
-			public static RenderSettings normal = new RenderSettings();
-			
+			public static RenderSettings normal = new RenderSettings("Default", 20, Color.BLACK); // this is making a rendersettings with default - nothing in it.
+			RenderSettings(string _text, int _fontSize, Color _color)
+			{
+				text = _text;
+				fontSize = _fontSize;
+				textColor = _color;
+			}
+
 			public ColorBlock colors = new ColorBlock()
 			{
 				disabled	= new Color(255, 255, 255, 128),
@@ -19,12 +25,13 @@ namespace Azimuth.UI
 				normal  = Color.LIGHTGRAY,
 				selected = Color.BLACK
 			};
-			public string text = "Button";
+			
+			public string text;
 			public float roundedness = 0.1f;
-			public int fontSize = 20;
+			public int fontSize;
 			public float fontSpacing = 1f;
 			public string? fontId = null;
-			public Color textColor = Color.WHITE;
+			public Color textColor;
 		}
 
 		private OnClickEvent? onClick;

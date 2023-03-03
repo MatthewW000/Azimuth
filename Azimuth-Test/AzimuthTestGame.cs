@@ -11,6 +11,7 @@ namespace Azimuth_Test
 	{
 		private ImageWidget image;
 		private Button button;
+		private Button.RenderSettings settings;
 
 		private void OnClickButton()
 		{
@@ -20,7 +21,7 @@ namespace Azimuth_Test
 		public override void Load()
 		{
 			int counter = 0;
-			
+			//settings = new Button.RenderSettings("Hello", 20, Color.BLACK);
 			image = new ImageWidget(Vector2.Zero, new Vector2(200, 400), "imageWidget");
 			button = new Button(Vector2.Zero, new Vector2(150, 75), Button.RenderSettings.normal);
 			button.SetDrawLayer(100);
