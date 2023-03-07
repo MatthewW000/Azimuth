@@ -11,7 +11,7 @@ namespace Azimuth.UI
 		public class RenderSettings
 		{
 			public static RenderSettings normal = new RenderSettings("Default", 20, Color.BLACK); // this is making a rendersettings with default - nothing in it.
-			RenderSettings(string _text, int _fontSize, Color _color)
+			public RenderSettings(string _text, int _fontSize, Color _color)
 			{
 				text = _text;
 				fontSize = _fontSize;
